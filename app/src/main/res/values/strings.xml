@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">medicinetime</string>
+
+    <!-- general -->
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="error">Hata</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="ok">Tamam</string>
+    <string name="success">Başarılı</string>
+
+    <!-- Login -->
+    <string name="email">E-Mail</string>
+    <string name="address">Adres</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş yap</string>
+    <string name="login_success">Giriş Başarılı</string>
+    <string name="login_failed">Giriş Başarısız</string>
+    <string name="login_error">Eksik veya hatalı bilgi girdiniz</string>
+    <string name="fill_in_all_fields">Tüm alanları doldurun</string>
+
+    <!-- Register -->
+    <string name="please_fill_in_all_fields">Lütfen tüm alanları doldurun</string>
+    <string name="registration_successful">Kayıt Başarılı</string>
+    <string name="registration_failed">Kayıt Başarısız</string>
+    <string name="adding_to_firestore_failed">Firestore ekleme başarısız</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="name">Ad</string>
+    <string name="surname">Soyad</string>
+    <string name="birthday">Doğum tarihi</string>
+    <string name="register_failed">Lütfen bilgileri kontrol ediniz.</string>
+    <string name="must_be_at_least_six_characters_long">Şifre en az 6 karakter olmalıdır</string>
+    <string name="email_already_in_use">E-posta zaten kullanılmış</string>
+    <string name="unknown_error_occurred">Bilinmeyen bir hata oluştu</string>
+    <string name="invalid_email_format">Geçersiz e-posta biçimi</string>
+
+    <!-- Navigation -->
+    <string name="profile">Profil</string>
+    <string name="home">Anasayfa</string>
+    <string name="add_medicine">İlaç Ekle</string>
+    <string name="splash">Splash</string>
+
 </resources>

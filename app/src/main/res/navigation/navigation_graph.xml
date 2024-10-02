@@ -1,0 +1,84 @@
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashPageFragment">
+
+    <fragment
+        android:id="@+id/splashPageFragment"
+        android:name="com.icmen.medicinetime.ui.fragment.splash.SplashPageFragment"
+        android:label="Splash Page"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashPageFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+
+        <action
+            android:id="@+id/action_splashPageFragment_to_registerPageFragment"
+            app:destination="@id/registerPageFragment" />
+
+        <action
+            android:id="@+id/action_splashPageFragment_to_HomePageFragment"
+            app:destination="@id/homePageFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerPageFragment"
+        android:name="com.icmen.medicinetime.ui.fragment.register.RegisterPageFragment"
+        android:label="Register Page"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_registerPageFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+        <action
+            android:id="@+id/action_registerPageFragment_to_HomePageFragment"
+            app:destination="@id/homePageFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="com.icmen.medicinetime.ui.fragment.login.LoginPageFragment"
+        android:label="Login Page"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginPageFragment_to_registerPageFragment"
+            app:destination="@id/registerPageFragment" />
+
+        <action
+            android:id="@+id/action_loginPageFragment_to_HomePageFragment"
+            app:destination="@id/homePageFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.icmen.medicinetime.ui.fragment.home.HomePageFragment"
+        android:label="Home Page"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addMedicinePageFragment"
+        android:name="com.icmen.medicinetime.ui.fragment.addmedicine.AddMedicinePageFragment"
+        android:label="Add Medicine Page"
+        tools:layout="@layout/fragment_add_medicine">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.icmen.medicinetime.ui.fragment.profile.ProfilePageFragment"
+        android:label="Profile Page"
+        tools:layout="@layout/fragment_profile">
+
+    </fragment>
+
+</navigation>

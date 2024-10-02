@@ -1,6 +1,146 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İlaç Adı"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etMedicineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İlaç adını girin"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dozaj"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dozajı girin (örn: 100 mg)"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanım Sıklığı"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kaç saatte bir alınacağını girin"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Başlangıç Tarihi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Başlangıç tarihini seçin"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitiş Tarihi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bitiş tarihini seçin"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alınma Saati"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etMedicineTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İlacın alınacağı saati seçin"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notlar (Opsiyonel)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İlaçla ilgili notları girin (örn: aç karnına alınmalı)"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <Button
+            android:id="@+id/btnSaveMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İlacı Kaydet"
+            android:background="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

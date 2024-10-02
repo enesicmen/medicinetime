@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "45698402225",
+    "project_id": "medicine-time-1b9ba",
+    "storage_bucket": "medicine-time-1b9ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45698402225:android:cfdfaccc94d71fef1d5f90",
+        "android_client_info": {
+          "package_name": "com.icmen.medicinetime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXA4YAkwRxi4BSIZfbithwB25e-YWRsIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

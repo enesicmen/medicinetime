@@ -71,6 +71,10 @@
         android:label="Add Medicine Page"
         tools:layout="@layout/fragment_add_medicine">
 
+        <action
+            android:id="@+id/action_addMedicinePageFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+
     </fragment>
 
     <fragment

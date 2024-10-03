@@ -32,7 +32,7 @@ class AddMedicinePageViewModel @Inject constructor(
         endDate: String
     ) {
         if (medicineName.isEmpty() || dosage.isEmpty() || endDate.isEmpty() || frequency.isEmpty() || startDate.isEmpty() || medicineTime.isEmpty()) {
-            _saveMedicineResult.value = Resource.Error("Lütfen tüm alanları doldurun.")
+            _saveMedicineResult.value = Resource.Error("0")
             return
         }
 
@@ -41,18 +41,18 @@ class AddMedicinePageViewModel @Inject constructor(
             val end = dateFormat.parse(endDate)
 
             if (start == null || end == null) {
-                _saveMedicineResult.value = Resource.Error("Geçersiz tarih formatı.")
+                _saveMedicineResult.value = Resource.Error("1")
                 return
             }
 
             if (start.after(end)) {
-                _saveMedicineResult.value = Resource.Error("Başlangıç tarihi, bitiş tarihinden büyük olamaz.")
+                _saveMedicineResult.value = Resource.Error("2")
                 return
             }
 
             val userId = firebaseAuth.currentUser?.uid
             if (userId == null) {
-                _saveMedicineResult.value = Resource.Error("Kullanıcı oturumu bulunamadı.")
+                _saveMedicineResult.value = Resource.Error("3")
                 return
             }
             val medicineData = hashMapOf(
@@ -74,11 +74,11 @@ class AddMedicinePageViewModel @Inject constructor(
                     _saveMedicineResult.value = Resource.Success(true)
                 }
                 .addOnFailureListener { e ->
-                    _saveMedicineResult.value = Resource.Error("İlaç kaydedilemedi: ${e.message}")
+                    _saveMedicineResult.value = Resource.Error("4")
                 }
 
         } catch (e: Exception) {
-            _saveMedicineResult.value = Resource.Error("Tarih hatası: ${e.message}")
+            _saveMedicineResult.value = Resource.Error("5")
         }
     }
 }

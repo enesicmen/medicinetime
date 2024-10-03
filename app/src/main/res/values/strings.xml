@@ -41,4 +41,27 @@
     <string name="add_medicine">İlaç Ekle</string>
     <string name="splash">Splash</string>
 
+    <!-- Add Medicine Page -->
+    <string name="invalid_date_format">Geçersiz tarih formatı.</string>
+    <string name="date_error">Başlangıç tarihi, bitiş tarihinden büyük olamaz.</string>
+    <string name="user_session_not_found">Kullanıcı oturumu bulunamadı.</string>
+    <string name="medicine_could_not_be_saved">İlaç kaydedilemedi</string>
+    <string name="date_error_sec">Tarih hatası</string>
+    <string name="success_add_medicine">İlaç başarıyla kaydedildi.</string>
+    <string name="medicine_name">İlaç adı</string>
+    <string name="enter_medicine_name">İlaç adını girin</string>
+    <string name="dosage">Dozaj</string>
+    <string name="enter_dosage">Dozajı girin (örn: 100 mg)</string>
+    <string name="frequency_of_use">Kullanım Sıklığı</string>
+    <string name="how_many_hours_pick_up">Kaç saatte bir alınacağını girin</string>
+    <string name="start_date">Başlangıç Tarihi</string>
+    <string name="select_start_date">Başlangıç Tarihi seçin</string>
+    <string name="end_date">Bitiş Tarihi</string>
+    <string name="select_end_date">Bitiş Tarihi seçin</string>
+    <string name="pick_up_time">Alınma Saati</string>
+    <string name="select_pick_up_medicine_hour">İlacın alınacağı saati seçin</string>
+    <string name="nots">Notlar (Opsiyonel)</string>
+    <string name="medicine_nots">İlaçla ilgili notları girin (örn: aç karnına alınmalı)</string>
+    <string name="save_medicine">İlacı kaydet</string>
+
 </resources>
